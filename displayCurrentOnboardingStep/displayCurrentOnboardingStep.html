@@ -1,0 +1,20 @@
+<!--This LWC displays user's current Onboarding step title along with it's instructions-->
+
+<template>
+  <div class="slds-grid slds-gutters">
+    <div class="slds-col slds-size_2-of-3">
+      <lightning-card>
+        <div class="slds-border_bottom" style="font-size: x-large;">
+          <p style="margin-left: 10px;">{label.currentStepRequirementsLabel}</p>
+        </div>
+        <div class="slds-box slds-m-around_medium" style="display: grid;">
+          <span style="font-size: large;"><lightning-formatted-text value = {onboardingStepTitle}></lightning-formatted-text>
+          </span>
+          <span style="font-size: medium;">
+            <lightning-formatted-text value = {onboardingStepInformation}></lightning-formatted-text>
+          </span>
+        </div>    
+      </lightning-card>
+    </div>
+  </div>
+</template>
